@@ -1,0 +1,13 @@
+sudo: false
+language: cpp
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++
+
+script:
+  - mkdir build && cd build && cmake .. && make
+  - cd build && ctest
