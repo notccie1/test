@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	printf("Test failed");
+	printf("Test failed, due to fail to compute");
 	return(0);
 }
 
