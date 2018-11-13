@@ -1,4 +1,4 @@
 # test
 
 
-![Travis (.org)](https://img.shields.io/travis/IvanKuchin/test.svg)
+![Travis (.com) branch](https://img.shields.io/travis/com/IvanKuchin/test/master.svg)
