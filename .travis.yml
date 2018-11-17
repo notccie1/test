@@ -4,7 +4,6 @@ language: cpp
 addons:
   apt:
     packages:
-      - g++
       - graphicsmagick-libmagick-dev-compat
       - libgraphicsmagick++1-dev
       - libwebp-dev
