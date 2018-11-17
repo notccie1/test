@@ -11,7 +11,7 @@ dist: xenial
 addons:
   apt:
     packages:
-#      - graphicsmagick-libmagick-dev-compat
+      - graphicsmagick-libmagick-dev-compat
       - libgraphicsmagick++-dev
       - libwebp-dev
 
