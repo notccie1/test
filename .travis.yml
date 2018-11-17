@@ -22,9 +22,9 @@ addons:
   apt:
     update: true
     packages:
-      - graphicsmagick-libmagick-dev-compat
-      - libgraphicsmagick++-dev
-      - libwebp-dev
+#      - graphicsmagick-libmagick-dev-compat
+#      - libgraphicsmagick++-dev
+#      - libwebp-dev
       - libmaxminddb-dev
 
 script:

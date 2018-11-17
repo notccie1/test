@@ -3,6 +3,7 @@ if(IMAGEMAGICK_DISABLE)
     message("Magick++ turned off")
 else(IMAGEMAGICK_DISABLE)
     find_package(ImageMagick COMPONENTS Magick++)
+#    find_package(ImageMagick REQUIRED)
 endif(IMAGEMAGICK_DISABLE)
 
 include_directories(${ImageMagick_INCLUDE_DIRS})
