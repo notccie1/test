@@ -20,10 +20,10 @@ before_install:
 
 addons:
   apt:
-    update: true
+#    update: true
     packages:
-#      - graphicsmagick-libmagick-dev-compat
-#      - libgraphicsmagick++-dev
+      - graphicsmagick-libmagick-dev-compat
+      - libgraphicsmagick++-dev
 #      - libwebp-dev
       - libmaxminddb-dev
 
