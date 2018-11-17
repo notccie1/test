@@ -2,15 +2,15 @@
 if(IMAGEMAGICK_DISABLE)
     message("Magick++ turned off")
 else(IMAGEMAGICK_DISABLE)
-    find_package(ImageMagick COMPONENTS Magick++)
-#    find_package(ImageMagick REQUIRED)
+#    find_package(ImageMagick COMPONENTS Magick++)
+    find_package(ImageMagick REQUIRED)
 endif(IMAGEMAGICK_DISABLE)
 
-include_directories(${ImageMagick_INCLUDE_DIRS})
+include_directories(${IMAGEMAGICK_INCLUDE_DIR})
 
-link_directories(${ImageMagick_LIBRARIES})
+link_directories(${IMAGEMAGICK_LIBRARY})
 
-link_libraries(${ImageMagick_LIBRARIES})
+link_libraries(${IMAGEMAGICK_LIBRARY})
 
 add_executable(index index.cpp)
 
