@@ -9,7 +9,11 @@ before_install:
 #  - sudo apt-get install -y libmaxminddb-dev
 #  - sudo apt-get install -y libavutil-dev libavcodec-dev libavformat-dev libmaxminddb-dev
 #  - sudo apt-get install -y --no-install-recommends --no-install-suggests graphicsmagick-libmagick-dev-compat libgraphicsmagick++-dev libwebp-dev libmaxminddb-dev libmysqlclient-dev libssl-dev libcurl4-openssl-dev pkg-config
+  - Magick++-config --version
+  - Magick++-config --cppflags
+  - Magick++-config --ldflags
   - Magick++-config --libs
+  - ls -la `Magick++-config --ldflags`
 
 addons:
   apt:
