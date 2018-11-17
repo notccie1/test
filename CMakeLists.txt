@@ -7,4 +7,5 @@ set(My_VERSION_MINOR 1)
 
 include(CTest)
 add_subdirectory(tests/)
+add_subdirectory(src/)
 
