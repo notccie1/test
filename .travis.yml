@@ -2,10 +2,10 @@ sudo: false
 language: gcc
 dist: xenial
 
-#before_install:
-#  - sudo add-apt-repository -y ppa:jonathonf/ffmpeg-3
-#  - sudo apt-get update -q
-#  - sudo apt-get install -y libavutil-dev libavcodec-dev libavformat-dev ffmpeg
+before_install:
+  - sudo add-apt-repository -y ppa:jonathonf/ffmpeg-3
+  - sudo apt-get update -q
+  - sudo apt-get install -y libavutil-dev libavcodec-dev libavformat-dev ffmpeg
 #  - sudo apt-get install -y --no-install-recommends --no-install-suggests graphicsmagick-libmagick-dev-compat libgraphicsmagick++1-dev libwebp-dev libmaxminddb-dev libmysqlclient-dev libssl-dev libcurl4-openssl-dev pkg-config
 
 addons:
@@ -16,5 +16,4 @@ addons:
       - libwebp-dev
 
 script:
-  - mkdir build && cd build && cmake .. && make
-  - ctest
+  - mkdir build && cd build && cmake .. && make && ctest
