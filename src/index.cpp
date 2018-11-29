@@ -4,6 +4,8 @@
 using namespace std;
 using namespace Magick;
 
+bug fix from notccie1
+
 int main(int argc, char **argv) {
   InitializeMagick(*argv);
   Image image;
